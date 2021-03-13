@@ -1,0 +1,33 @@
+﻿@page "/"
+<style>
+    .float {
+        float: left;
+        width: 45%;
+        margin: 5px;
+    }
+    .clear {
+        clear: both;
+    }
+    textarea {
+        width: 100%;
+    }
+</style>
+
+<h1>Router Bushing Template Finder</h1>
+
+@*<label for="bushing">Bushing OD</label>
+<input @bind="BushingOD" name="bushing" type="text" /><br />*@
+
+<label for="desired">Desired Hole (mm)</label>
+<input @bind="DesiredHole" name="desired" type="text" /><br />
+
+@*<label for="routerbit">Router Bit OD</label>
+<input @bind="BitOD" name="routerbit" type="text" /><br />*@
+
+@*<label for="template">Template Size</label>
+<input @bind="TemplateID" name="template" type="text" /><br />*@
+
+
+<textarea @bind="output"></textarea>
+
+<button class="btn btn-primary" @onclick="ConvertClick">Calculate</button>
