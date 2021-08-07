@@ -28,7 +28,7 @@ namespace TWKUtils.Pages
 
                 foreach (var bushing in CommonBushings)
                 {
-                    if (bit < bushing)
+                    if (bit < bushing && DesiredHole > bit)
                     {
                         var t = DesiredHole + (bushing - bit);
                         b.Combinations.Add(new PossibleCombination(bushing, t));
